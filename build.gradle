@@ -4,7 +4,6 @@ buildscript {
 	}
 	repositories {
 		mavenCentral()
-		mavenLocal()
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -17,6 +16,18 @@ apply plugin: 'org.springframework.boot'
 
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
+
+
+/*
+springBoot {
+	executable = true
+}
+*/
+
+/* // make executable using gradle
+apply plugin: 'application'
+mainClassName = "com.bookgroovy.BookgroovyApplication"
+ */
 
 repositories {
 	mavenCentral()
